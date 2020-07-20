@@ -1,0 +1,36 @@
+package AmazonTest;
+
+public class Amazon_ProductPurchase {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LaunchApp();
+		LoginApp();
+		SearchandSelectItem("65 inch Led TV");
+		AddtocartItem("65 inch Led TV");
+		PurchaseComplete("65 inch Led TV");
+
+	}
+	
+	public static void LaunchApp(){
+		System.out.println("Expected Amazon app launched");
+	}
+	public static void LoginApp(){
+		System.out.println("Expected Amazon app Login");
+	}
+	
+	public static void SearchandSelectItem(String Itemname){
+		System.out.println("Expected Product" +Itemname+" available to purchase");
+		System.out.println("Expected Product" +Itemname+" Selected for purchase");
+	}
+	public static void AddtocartItem(String Itemname){
+		System.out.println("Expected Product" +Itemname+" Added in to the cart");
+	}
+	public static void PurchaseComplete(String Itemname){
+		System.out.println("Expected Product" +Itemname+" Purchase Completed");
+	}
+}
